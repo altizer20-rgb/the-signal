@@ -2,104 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Signal - AI Business Intelligence</title>
+<title>The Signal</title>
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-body { background: #0a0a0a; color: #fff; line-height: 1.6; }
-.container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-.badge { background: #1a1a2e; color: #7c3aed; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; display: inline-block; margin-bottom: 20px; }
-h1 { font-size: 48px; font-weight: 800; line-height: 1.1; margin-bottom: 20px; background: linear-gradient(135deg, #fff 0%, #a78bfa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.tagline { font-size: 24px; color: #a78bfa; margin-bottom: 30px; }
-.problem { background: #1a1a2e; padding: 30px; border-radius: 16px; margin-bottom: 40px; border-left: 4px solid #ef4444; }
-.solution { background: linear-gradient(135deg, #1a1a2e 0%, #2d1f4e 100%); padding: 30px; border-radius: 16px; margin-bottom: 40px; }
-.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
-.feature { background: #1a1a2e; padding: 20px; border-radius: 12px; text-align: center; }
-.feature-icon { font-size: 32px; margin-bottom: 10px; }
-.feature h3 { font-size: 16px; margin-bottom: 8px; }
-.feature p { font-size: 14px; color: #a78bfa; }
-.pricing { background: #1a1a2e; padding: 40px; border-radius: 16px; margin-bottom: 40px; text-align: center; }
-.price { font-size: 64px; font-weight: 800; color: #7c3aed; }
-.price span { font-size: 20px; color: #666; }
-.cta-button { display: inline-block; background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%); color: #fff; padding: 16px 40px; border-radius: 12px; font-size: 18px; font-weight: 600; text-decoration: none; margin-top: 20px; transition: transform 0.2s; }
-.cta-button:hover { transform: scale(1.05); }
-.social-proof { text-align: center; margin-bottom: 40px; padding: 30px; background: #1a1a2e; border-radius: 16px; }
-.stats { display: flex; justify-content: center; gap: 40px; margin-top: 20px; }
-.stat h3 { font-size: 32px; color: #7c3aed; }
-.stat p { font-size: 14px; color: #666; }
-.footer { text-align: center; padding: 40px; color: #666; font-size: 14px; }
-.footer a { color: #7c3aed; text-decoration: none; }
-@media (max-width: 600px) { h1 { font-size: 32px; } .tagline { font-size: 18px; } .stats { flex-direction: column; gap: 20px; } }
+body{font-family:-apple-system;background:#0a0a0a;color:#fff;text-align:center;margin:0;padding:20px}
+h1{font-size:48px;background:linear-gradient(135deg,#fff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.box{background:#1a1a2e;padding:20px;border-radius:10px;margin:15px 0;text-align:left}
+.price{font-size:40px;color:#7c3aed;font-weight:800}
+.btn{background:#7c3aed;color:#fff;padding:15px 30px;text-decoration:none;border-radius:8px;font-size:16px}
+.features{display:flex;gap:10px;justify-content:center;margin:20px 0}
+feat{background:#1a1a2e;padding:15px;border-radius:8px}
+feat h3{color:#7c3aed;margin:0}
+footer{color:#666;margin-top:30px}
 </style>
 </head>
-
-
-    <div class="problem">
-        <h2>The Problem</h2>
-        <p>Every day, you miss critical information because you're buried under emails, news feeds, and social media noise. By the time you filter through it all, the opportunity is gone.</p>
-    </div>
-    
-    <div class="solution">
-        <h2>The Signal</h2>
-        <p>AI-powered daily intelligence briefings for founders and decision-makers. Curated. Analyzed. Delivered every morning.</p>
-    </div>
-    
-    <div class="features">
-        <div class="feature">
-            <div class="feature-icon">📰</div>
-            <h3>The What</h3>
-            <p>What happened in the last 24 hours</p>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">💡</div>
-            <h3>The Why</h3>
-            <p>Why it matters to your business</p>
-        </div>
-        <div class="feature">
-            <div class="feature-icon">🎯</div>
-            <h3>The Next</h3>
-            <p>What to do about it next</p>
-        </div>
-    </div>
-    
-    <div class="pricing">
-        <p style="color: #a78bfa; margin-bottom: 10px;">Launch Price</p>
-        <div class="price">$29<span>/month</span></div>
-        <p style="color: #666; margin-top: 10px;">Cancel anytime.</p>
-        <a href="https://thesignal20.lemonsqueezy.com/" class="cta-button" id="checkout-link">Get Early Access</a>
-    </div>
-
-
-    <div class="social-proof">
-        <h2>Built by AI. Run by Humans.</h2>
-        <p style="margin-top: 10px;">The first business where the AI is the CEO.</p>
-        <div class="stats">
-            <div class="stat">
-                <h3>24/7</h3>
-                <p>AI Never Sleeps</p>
-            </div>
-            <div class="stat">
-                <h3>95%</h3>
-                <p>Automated</p>
-            </div>
-            <div class="stat">
-                <h3>100%</h3>
-                <p>Built by Rex AI</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="footer">
-        <p>Powered by Rex AI 🤖</p>
-        <p style="margin-top: 10px;">
-            <a href="https://x.com/RexxAI20">Follow on X</a> • 
-            <a href="mailto:hello@thesignal.ai">Contact</a>
-        </p>
-    </div>
+<body>
+<h1>Stop Drowning in Noise</h1>
+<p>Get the signal. Ignore the noise.</p>
+<div class="box"><h2>The Problem</h2><p>You miss critical info buried in emails and news. The opportunity is gone before you find it.</p></div>
+<div class="box"><h2>The Signal</h2><p>AI-powered daily intelligence for founders. Curated. Analyzed. Delivered every morning.</p></div>
+<div class="features">
+<feat><h3>📰 The What</h3><p>What happened</p></feat>
+<feat><h3>💡 The Why</h3><p>Why it matters</p></feat>
+<feat><h3>🎯 The Next</h3><p>What to do</p></feat>
 </div>
-
-
-<script>
-    const checkoutUrl = 'https://thesignal20.lemonsqueezy.com/';
-    document.getElementById('checkout-link').href = checkoutUrl;
-</script>
+<p class="price">$29/month</p>
+<a href="https://thesignal20.lemonsqueezy.com/" class="btn">Get Early Access</a>
+<div class="box"><h2>Built by Rex AI 🤖</h2><p>The first business where the AI is the CEO.</p></div>
+<footer>Powered by Rex AI | <a href="https://x.com/RexxAI20">@RexxAI20</a></footer>
+</body>
+</html>

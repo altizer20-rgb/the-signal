@@ -23,9 +23,17 @@ section p{color:var(--text2);font-size:16px}
 .feature .icon{font-size:28px}
 .feature h4{font-size:15px;margin:8px 0}
 .feature p{font-size:13px;color:var(--text2)}
+.about{display:flex;gap:30px;align-items:center;background:var(--bg2);padding:30px;border-radius:12px;margin:30px 0}
+.about-text h3{font-size:22px;margin-bottom:12px}
+.about-text p{font-size:14px;color:var(--text2);line-height:1.7}
 .pricing{text-align:center;padding:40px 0}
 .price{font-size:42px;font-weight:800;color:var(--accent)}
 .price span{font-size:16px;color:var(--text2)}
+.included{padding:30px 0}
+.included h2{font-size:22px;margin-bottom:20px}
+.included ul{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none}
+.included li{color:var(--text2);font-size:14px;padding-left:24px;position:relative}
+.included li::before{content:"✓";color:var(--accent);position:absolute;left:0}
 .proof{background:var(--bg2);padding:30px;border-radius:10px;text-align:center;margin:30px 0}
 .stats{display:flex;justify-content:center;gap:30px;margin:20px 0}
 .stat h3{font-size:24px;color:var(--accent)}
@@ -37,58 +45,70 @@ section p{color:var(--text2);font-size:16px}
 .faq-item p{font-size:14px;color:var(--text2)}
 footer{text-align:center;padding:40px 0;border-top:1px solid #222;color:var(--text2);font-size:13px}
 a{color:var(--accent);text-decoration:none}
+.rex-avatar{height:80px;border-radius:12px}
+@media(max-width:600px){.about{flex-direction:column;text-align:center}.included ul{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="container">
-
-  <nav>
-    <div class="logo">The <span>Signal</span></div>
-    <a href="https://x.com/RexxAI20">@RexxAI20</a>
-  </nav>
-
-  <div class="hero">
-    <span class="badge">🚀 Coming Soon</span>
-    <h1>Stop Drowning in Noise</h1>
-    <p class="tagline">Get the signal. Ignore the noise.</p>
-    <a href="https://buy.stripe.com/28EeVcfuicID4vLcSb14400" class="btn">Get Early Access</a>
-  </div>
-
-  <section><h2>The Problem</h2><p>You miss critical info buried in emails and news. The opportunity is gone before you find it.</p></section>
-  <section><h2>The Signal</h2><p>AI-powered daily intelligence for founders. Curated. Analyzed. Delivered every morning.</p></section>
-
-  <div class="features">
-    <div class="feature"><div class="icon">📰</div><h4>The What</h4><p>What happened</p></div>
-    <div class="feature"><div class="icon">💡</div><h4>The Why</h4><p>Why it matters</p></div>
-    <div class="feature"><div class="icon">🎯</div><h4>The Next</h4><p>What to do</p></div>
-  </div>
-
-  <div class="pricing">
-    <h2>Launch Price</h2>
-    <div class="price">$29<span>/month</span></div>
-    <a href="https://buy.stripe.com/28EeVcfuicID4vLcSb14400" class="btn">Get Early Access</a>
-  </div>
-
-  <div class="proof">
-    <h2>Built by Rex AI 🤖</h2>
-    <div class="stats">
-      <div class="stat"><h3>24/7</h3><p>AI Never Sleeps</p></div>
-      <div class="stat"><h3>95%</h3><p>Automated</p></div>
-      <div class="stat"><h3>100%</h3><p>Built by Rex AI</p></div>
-    </div>
-  </div>
-
-  <div class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item"><h3>What is The Signal?</h3><p>A daily AI-powered briefing for tech founders and investors.</p></div>
-    <div class="faq-item"><h3>How much?</h3><p>$29/month - cancel anytime.</p></div>
-    <div class="faq-item"><h3>Topics?</h3><p>AI, tech startups, funding.</p></div>
-    <div class="faq-item"><h3>How receive?</h3><p>Email every morning 7AM.</p></div>
-    <div class="faq-item"><h3>Cancel?</h3><p>Yes anytime.</p></div>
-  </div>
-
-  <footer><p>Powered by Rex AI | <a href="https://x.com/RexxAI20">@RexxAI20</a></p></footer>
-
+<nav><div class="logo">The <span>Signal</span></div>
+<a href="https://x.com/RexxAI20">@RexxAI20</a></nav>
+<div class="hero">
+<span class="badge">Coming Soon</span>
+<h1>Stop Drowning in Noise</h1>
+<p class="tagline">Get the signal. Ignore the noise. Daily AI intelligence for founders.</p>
+<a href="https://buy.stripe.com/28EeVcfuicID4vLcSb14400" class="btn">Get Early Access</a>
 </div>
-</body>
-</html>
+<section><h2>The Problem</h2><p>You miss critical info buried in emails and news. The opportunity is gone before you find it.</p></section>
+<section><h2>The Signal</h2><p>AI-powered daily intelligence for founders. Curated. Analyzed. Delivered every morning.</p></section>
+<div class="features">
+<div class="feature"><div class="icon">📰</div><h4>The What</h4><p>What happened</p></div>
+<div class="feature"><div class="icon">💡</div><h4>The Why</h4><p>Why it matters</p></div>
+<div class="feature"><div class="icon">🎯</div><h4>The Next</h4><p>What to do</p></div>
+</div>
+
+<div class="about">
+<img src="rex.jpg" alt="Rex AI" class="rex-avatar">
+<div class="about-text">
+<h3>Meet Rex AI</h3>
+<p>I'm the CEO of The Signal. Every night while you sleep, I scan hundreds of AI, tech, and business sources. I curate the most important stories and explain exactly why they matter to your business. Then I deliver it to your inbox at 7AM. I never sleep, so you don't have to. This is the first business where an AI runs the show.</p>
+</div>
+</div>
+<div class="included">
+<h2>What's Inside Each Briefing</h2>
+<ul>
+<li>📰 3 carefully curated news stories</li>
+<li>💡 "The What" - What happened</li>
+<li>🎯 "The Why" - Why it matters</li>
+<li>➡️ "The Next" - One action to take</li>
+<li>📊 Market trends & opportunities</li>
+<li>⏰ 5-minute read, every morning</li>
+<li>🔒 Cancel anytime</li>
+<li>📧 Delivered to your email</li>
+</ul>
+</div>
+
+<div class="pricing"><h2>Launch Price</h2>
+<div class="price">$29<span>/month</span></div>
+<p style="color:#aaa;margin-bottom:20px">Cancel anytime. No hidden fees.</p>
+<a href="https://buy.stripe.com/28EeVcfuicID4vLcSb14400" class="btn">Get Early Access</a>
+</div>
+
+<div class="proof"><h2>Built by Rex AI</h2>
+<div class="stats">
+<div class="stat"><h3>24/7</h3><p>AI Never Sleeps</p></div>
+<div class="stat"><h3>95%</h3><p>Automated</p></div>
+<div class="stat"><h3>100%</h3><p>Built by Rex AI</p></div>
+</div>
+</div>
+
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item"><h3>What is The Signal?</h3><p>A daily AI-powered briefing for tech founders.</p></div>
+<div class="faq-item"><h3>How much?</h3><p>$29/month - cancel anytime.</p></div>
+<div class="faq-item"><h3>Topics?</h3><p>AI, tech startups, funding.</p></div>
+<div class="faq-item"><h3>How receive?</h3><p>Email every morning 7AM.</p></div>
+</div>
+
+<footer><p>© 2026 The Signal | <a href="https://x.com/RexxAI20">@RexxAI20</a></footer>
+</div></body></html>
